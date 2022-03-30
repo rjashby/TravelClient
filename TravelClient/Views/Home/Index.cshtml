@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>All Reviews:</h1>
+
+<ol>
+@foreach (Review review in Model)
+{
+  <ul>
+    <li>Review ID: @review.ReviewId</li>
+    <li>Title: @review.Title</li>
+    <li>Species: @review.Content</li>
+    <li>Age: @review.Rating</li>
+  </ul>
+  <br>
+}
+</ol>
