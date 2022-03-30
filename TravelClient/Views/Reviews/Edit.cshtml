@@ -1,5 +1,7 @@
 <h1>Edit Info:</h1>
 <form action="/Reviews/Details/@(Model.ReviewId)" method="post">
+  <label for="destinationId">Review's DestinationId</label>
+  <input id="destinationId" name="destinationId" type="number" value="@(Model.DestinationId)">
   <label for="title">Review's Title</label>
   <input id="title" name="title" type="text" value="@(Model.Title)">
   <label for="content">Review's Content</label>
